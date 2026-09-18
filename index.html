@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="facebook-domain-verification" content="me6rxtmtymjll0n4mx6z84okmvaolp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARA 567 - India's No.1 Matka App</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '855880647322469');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=855880647322469&ev=PageView&noscript=1"
+/></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        :root {
+            --primary: #077eff;
+            --primary-dark: #0056b3;
+            --accent-green: #00b050;
+            --accent-orange: #ff9d00;
+            --bg-top: #ffe0cc;
+            --bg-bottom: #ffc2d1;
+            --white: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+            background-attachment: fixed;
+            color: var(--text-dark);
+            font-family: 'Outfit', sans-serif;
+            text-align: center;
+            overflow-x: hidden;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 20px 140px;
+        }
+
+        /* Modern Logo */
+
+        .logo-container {
+            margin: 30px auto;
+            position: relative;
+            width: 140px;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: white;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            font-size: 26px;
+            font-weight: 900;
+            line-height: 1.1;
+            box-shadow: 0 20px 40px rgba(7, 126, 255, 0.3);
+            animation: logo-morph 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes logo-morph {
+            0% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+            100% {
+                border-radius: 50% 50% 30% 70% / 50% 30% 70% 50%;
+            }
+        }
+
+        /* Typography */
+
+        .app-title {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+        }
+
+        .downloads-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .headline {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--accent-green);
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 0px white;
+        }
+
+        /* Buttons */
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            text-decoration: none;
+            padding: 18px 45px;
+            background: var(--primary);
+            color: white;
+            border-radius: 20px;
+            font-size: 1.3rem;
+            font-weight: 900;
+            box-shadow: 0 15px 35px -10px rgba(7, 126, 255, 0.5);
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 45px -10px rgba(7, 126, 255, 0.6);
+        }
+
+        .btn:active {
+            transform: translateY(0) scale(0.98);
+        }
+
+        /* Feature Card */
+
+        .card {
+            background: var(--white);
+            border-radius: 35px;
+            padding: 35px;
+            margin: 40px 0;
+            box-shadow: var(--shadow);
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(7, 126, 255, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .card h2 {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #1e3a8a;
+            text-align: center;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .features-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 12px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 14px 18px;
+            background: #f8fafc;
+            border-radius: 18px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .feature-item:hover {
+            background: #fff;
+            border-color: #e2e8f0;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        .feature-item span {
+            font-size: 1.4rem;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+        }
+
+        /* Badges */
+
+        .badge-bid {
+            display: inline-block;
+            background: #fff3e0;
+            border: 2px dashed #ff9d00;
+            color: #e67e22;
+            padding: 10px 25px;
+            border-radius: 100px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            margin: 25px 0 10px;
+            animation: shake 5s ease-in-out infinite;
+        }
+
+        @keyframes shake {
+            0%,
+            10% {
+                transform: rotate(0);
+            }
+            2% {
+                transform: rotate(2deg);
+            }
+            4% {
+                transform: rotate(-2deg);
+            }
+            6% {
+                transform: rotate(2deg);
+            }
+            8% {
+                transform: rotate(0);
+            }
+        }
+
+        .trust-text {
+            color: var(--text-muted);
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* Offers Section */
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 30px;
+            margin-top: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .info-box h3 {
+            color: #b45309;
+            font-weight: 900;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .info-box p {
+            color: #475569;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        /* Fixed Footer */
+
+        .fixed-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(15px);
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .btn-full {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            font-size: 1.4rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(7, 126, 255, 0.4);
+            animation: pulse-glow 2s infinite;
+        }
+
+        @keyframes pulse-glow {
+            0% {
+                box-shadow: 0 10px 40px rgba(7, 126, 255, 0.4);
+            }
+            50% {
+                box-shadow: 0 10px 60px rgba(7, 126, 255, 0.6);
+            }
+            100% {
+                box-shadow: 0 10px 40px rgba(7, 126, 255, 0.4);
+            }
+        }
+
+        .footer-note {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 40px;
+            font-weight: 600;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 600px) {
+            .app-title {
+                font-size: 2.2rem;
+            }
+            .logo-container {
+                width: 120px;
+                height: 120px;
+                font-size: 22px;
+            }
+            .card {
+                padding: 25px 20px;
+            }
+            .btn {
+                width: 100%;
+                padding: 18px;
+                font-size: 1.1rem;
+            }
+            .feature-item {
+                font-size: 0.85rem;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Premium Logo Animation -->
+        <div class="logo-container">
+            SARA<br>567
+        </div>
+
+        <h1 class="app-title">SARA 567</h1>
+        <div class="downloads-badge">⭐ 387K+ DOWNLOADS ⭐</div>
+        <p class="headline">India's No.1 Online Matka Application 🇮🇳</p>
+
+        <!-- Top Action Button -->
+        <button class="btn" onclick="window.location.href='Sara567.1 (1).apk';">
+            ⬇️ Install App Now
+        </button>
+
+        <!-- Features Card -->
+        <div class="card">
+            <h2>🔥 EXCLUSIVE FEATURES 🔥</h2>
+
+            <ul class="features-list">
+                <li class="feature-item"><span>📈</span> Minimum Deposit – ₹50</li>
+                <li class="feature-item"><span>🎯</span> Minimum Withdrawal – ₹200</li>
+                <li class="feature-item"><span>🕐</span> 24/7 Instant Withdrawal</li>
+                <li class="feature-item"><span>🎮</span> All Market Games Available</li>
+                <li class="feature-item"><span>🔒</span> 100% Safe & Secure Platform</li>
+                <li class="feature-item"><span>🔁</span> Auto Deposit & Withdrawal</li>
+                <li class="feature-item"><span>📡</span> Live Matka Updates</li>
+                <li class="feature-item"><span>⚡</span> Real-Time Results</li>
+                <li class="feature-item"><span>💯</span> 100% Trusted & Genuine</li>
+                <li class="feature-item"><span>🏆</span> All Day Withdrawal</li>
+                <li class="feature-item"><span>✅</span> 100% Transparency</li>
+                <li class="feature-item"><span>🇮🇳</span> Kalyan Market Fully Online</li>
+            </ul>
+
+            <div style="text-align: center;">
+                <div class="badge-bid">अब खेलें सिर्फ ₹1 से — 1 रुपया से BID PLAY करो 🎯</div>
+                <div class="trust-text">
+                    <span style="color: #22c55e;">✅</span> 100% Verified App • Trusted by 2.8 Lakh+ Users
+                </div>
+            </div>
+        </div>
+
+        <!-- Offers/Info -->
+        <div class="info-box">
+            <h3>💥 Daily Offers & Fast Payments 💥</h3>
+            <p>💰 Instant Payment System | 🏦 Auto Withdrawal | 🕐 24×7 Support</p>
+            <p>🪙 Multiple Payment Methods (Paytm, GPay, PhonePe)</p>
+            <p>🎁 Daily Bonus & Referral Rewards — Invite Friends & Earn More!</p>
+            <p style="margin-top: 15px; color: var(--primary); font-weight: 800;">Download Now and Start Playing SARA 567 Today!</p>
+        </div>
+
+        <p class="footer-note">© 2025 SARA 567 | ALL RIGHTS RESERVED | TRUSTED GAMING PLATFORM</p>
+    </div>
+
+    <!-- Sticky Full-Width Footer Button -->
+    <div class="fixed-footer">
+        <button class="btn btn-full" onclick="window.location.href='Sara567.1 (1).apk';">
+            ⬇️ DOWNLOAD APP NOW
+        </a>
+    </div>
+
+    <script>
+        // Smooth entrance reveal
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.app-title, .downloads-badge, .headline, .btn, .card, .info-box');
+            elements.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'all 0.6s cubic-bezier(0.23, 1, 0.32, 1)';
+                
+                setTimeout(() => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+        });
+    </script>
+
+</body>
+</html>
